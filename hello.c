@@ -4,18 +4,22 @@
 int main(void) {
     struct utsname sysInfo;
     
-    // Retrieve system information
-    if (uname(&sysInfo) == -1) {
+
+if (uname(&sysInfo) == -1) {
         perror("uname");
         return 1;
     }
-    
-    // Print system information along with student name
+
     printf("Hello, World!\n");
     printf("System Name: %s\n", sysInfo.sysname);
     printf("Node Name:   %s\n", sysInfo.nodename);
     printf("Machine:     %s\n", sysInfo.machine);
-    printf("Student Name: Shubham Milind Kasar\n");
+    printf("\n Student Name: Shubham Milind Kasar");
+	printf("\n Student Name: Syedfurkhan Feroz Hashmi");
+	printf("\n Student Name: Pratishtha Pant");
+	printf("\n Student Name: Suhas Thandaga Ramesh\n");
+  
+  
     
     return 0;
 }
